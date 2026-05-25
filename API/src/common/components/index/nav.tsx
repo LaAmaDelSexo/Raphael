@@ -6,7 +6,7 @@
 function Nav () {
   return (
     <>
-      <section>
+      <nav>
             <ul>
           <a>
             <p>Home</p>
@@ -34,7 +34,7 @@ function Nav () {
             </svg>
           </a>
         </ul> 
-      </section>
+      </nav>
     </>
   )
 }
