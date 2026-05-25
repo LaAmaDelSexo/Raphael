@@ -1,39 +1,38 @@
 
 //import './home'
-
+import { Link } from "react-router-dom"
 
 
 function Nav () {
   return (
     <>
       <nav>
-            <ul>
-          <a>
-            <p>Home</p>
-          </a>
-          <a>
-            <p>Sobre Nosotros</p>
-          </a>
-          <a>
-            <p>Portal Estudiantil</p>
-          </a>
-          <a>
-            <p>Inscripciones</p>
-          </a>
-          <a>
-            <p>Contactanos</p>
-          </a>
-          <a href="">
-            <p>Login.jpg</p>
-            <svg>
-            </svg>
-          </a>
-          <a href="">
-              <p>Settings.jpg</p>
-            <svg>
-            </svg>
-          </a>
-        </ul> 
+        <ul>
+          <li>
+            <Link to={"/"}>Inicio</Link>
+          </li>
+          <li>
+            <Link to={"/Home"}>Home</Link>
+          </li>
+          <li>
+            <Link to={"/About"}>Sobre Nosotros</Link>
+          </li>
+          <li>
+            <Link to={"/Showcase"}>Destacados</Link>
+          </li>
+          <li>
+            <Link to={"/Registration"}>Inscripciones</Link>
+          </li>
+          <li>
+            <Link to={"/Social"}>Portal Estudiantil</Link>
+          </li>
+          <li>
+            <Link to={"/Contact"}>Contactanos</Link>
+          </li>
+          <li>
+            <Link to={"/Login"}>Login</Link>
+          </li>
+        </ul>
       </nav>
     </>
   )
