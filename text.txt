@@ -1,0 +1,76 @@
+.:
+total 12
+4 docs
+4 infrastructure
+4 src
+0 text.txt
+
+./docs:
+total 0
+
+./infrastructure:
+total 4
+4 error_logger
+
+./infrastructure/error_logger:
+total 0
+
+./src:
+total 28
+4 assets
+4 common
+4 core
+4 index.css
+4 index.html
+4 index.ts
+0 npm.js
+4 scripts
+
+./src/assets:
+total 0
+
+./src/common:
+total 16
+4 app
+4 components
+4 lib
+4 modules
+
+./src/common/app:
+total 4
+4 readme.md
+
+./src/common/components:
+total 0
+
+./src/common/lib:
+total 16
+4 api
+4 hooks
+4 types
+4 utils
+
+./src/common/lib/api:
+total 0
+
+./src/common/lib/hooks:
+total 0
+
+./src/common/lib/types:
+total 0
+
+./src/common/lib/utils:
+total 0
+
+./src/common/modules:
+total 0
+
+./src/core:
+total 4
+4 key_log
+
+./src/core/key_log:
+total 0
+
+./src/scripts:
+total 0
