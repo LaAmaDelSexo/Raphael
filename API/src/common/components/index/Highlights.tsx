@@ -1,5 +1,4 @@
-
-import Social from "./social"
+import Social from "./Social"
 
 function Highlights () {
   return (

@@ -4,17 +4,25 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 //import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import './index.css'
 import App from './App.tsx'
-import Home from './common/components/index/home.tsx';
+import Home from './common/components/home/Home.tsx';
+import About from './common/components/about/About.tsx';
+import Showcase from './common/components/showcase/Showcase.tsx';
+import Registration from './common/components/registration/Registration.tsx';
+import Social from './common/components/index/Social.tsx';
+import StudentPortal from './common/components/studentPortal/StudentPortal.tsx';
+import Contact from './common/components/contacts/Contact.tsx';
+import Login from './common/components/login/Login.tsx';
 
 const router =createBrowserRouter([
   {path:"/",element:<App />},
   {path:"/Home",element:<Home />},
-//  {path:"/About",element:<About />},
-//  {path:"/Showcase",element:<Showcase />}
-//  {path:"/Registration",element:<Registration />},
-//  {path:"/Social",element:<Social />},
-//  {path:"/Contacts",element:<Contacts />},
-//  {path:"/Login",element:<Login />},
+  {path:"/About",element:<About />},
+  {path:"/Showcase",element:<Showcase />},
+  {path:"/Registration",element:<Registration />},
+  {path:"/Social",element:<Social />},
+  {path:"/StudentPortal",element:<StudentPortal />},
+  {path:"/Contact",element:<Contact />},
+  {path:"/Login",element:<Login />},
 ])
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

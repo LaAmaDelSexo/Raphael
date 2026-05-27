@@ -24,7 +24,7 @@ function Nav () {
             <Link to={"/Registration"}>Inscripciones</Link>
           </li>
           <li>
-            <Link to={"/Social"}>Portal Estudiantil</Link>
+            <Link to={"/StudentPortal"}>Portal Estudiantil</Link>
           </li>
           <li>
             <Link to={"/Contact"}>Contactanos</Link>

@@ -2,7 +2,7 @@
 
 
 
-function Home () {
+function Summary () {
   return (
     <>
       <section>
@@ -11,4 +11,4 @@ function Home () {
     </>
   )
 }
-export default Home
+export default Summary
