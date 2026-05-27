@@ -12,10 +12,10 @@ function Nav () {
             <Link to={"/"}>Inicio</Link>
           </li>
           <li>
-            <Link to={"/Home"}>Home</Link>
+            <Link to={"/About"}>Sobre Nosotros</Link>
           </li>
           <li>
-            <Link to={"/About"}>Sobre Nosotros</Link>
+            <Link to={"/FindUs"}>Ubicanos</Link>
           </li>
           <li>
             <Link to={"/Showcase"}>Destacados</Link>
