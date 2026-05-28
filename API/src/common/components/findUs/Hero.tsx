@@ -12,7 +12,7 @@ function Hero () {
       <h2>Donde estamos?</h2>
       <p> Nos puedes ubicar en Loremp impsum dominem</p>
       <APIProvider apiKey={Key}>
-        <div id="map" >
+        <div id="map" style={{ width: '100%', height: '400px' }} >
           <Map
             defaultCenter={{lat: 22.54992, lng: 0}}
             defaultZoom={3}
