@@ -1,7 +1,7 @@
 function Hero () {
   return (
     <section>
-      <h1></h1>
+      <h1>Nuestra historia.</h1>
       <div className="about-us">
         <div className="information">
           <h2>38 Años de Excelencia</h2>
@@ -17,6 +17,7 @@ function Hero () {
         </div>
       </div>
       <div>
+        <h2>Los pasos a traves de los años</h2>
         <div className="slider">
           <div className="slider-items-container">
             <ul>
@@ -38,8 +39,8 @@ function Hero () {
           </div>
         </div>
       </div>
-      <div>
-
+      <div className="">
+        
       </div>
       <div>
 
