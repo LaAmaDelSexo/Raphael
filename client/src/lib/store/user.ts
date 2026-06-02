@@ -3,7 +3,7 @@ import {create} from 'zustand';
 import { NIL as NIL_UUID } from 'uuid';
 
 
-export type UserRole = 'guest' | 'student' | 'admin' | 'owner'; 
+export type UserRole = 'GUEST' | 'STUDENT' | 'TEACHER' | 'ADMIN' | 'OWNER'; 
 
 interface User {
 //Identity
