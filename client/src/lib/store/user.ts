@@ -23,10 +23,10 @@ interface UserState {
   profile: User | null;
   isAuthenticated: boolean;
   role : 'GUEST' | 'STUDENT' | 'TEACHER' | 'ADMIN' | 'OWNER' | null;
-  permisions: string[];
+  permissions: string[];
   isExpired?: boolean
   isLoading?: boolean
-  login: (userData: User, role: string, permision: string[]) => void;
+  login: (userData: User, role: string, permissions: string[]) => void;
   logout: () => void;
   checkAuth: () => Promise<void>
 }
@@ -37,21 +37,21 @@ export const useUser = create<UserState>((set) => ({
   profile: null,
   isAuthenticated: false,
   role: null,
-  permisions: [],
+  permissions: [],
   isExpired: false,
   isLoading: false,
-  login: (profile, role, permisions) =>
+  login: (profile, role, permissions) =>
     set({
       profile,
       role: role as UserState['role'],
-      permisions,
+      permissions,
       isAuthenticated: true    
     }),
     logout: () => 
       set({
         profile: null,
         role: null,
-        permisions: [],
+        permissions: [],
         isAuthenticated: false
       }),
     checkAuth: async () => {
