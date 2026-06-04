@@ -1,7 +1,6 @@
 import {create} from 'zustand'
-import Registration from '../../../common/components/registration/Registration';
 
-export type ContentOptions = 'REQUIREMENTS' | 'APLICATIONS' | 'TUITIONS' | 'INSTRUCTIONS' | 'TESTIMONIES' |'ADMISIONTEAM';
+export type ContentOptions = 'REQUIREMENTS' | 'APPLICATIONS' | 'TUITIONS' | 'INSTRUCTIONS' | 'TESTIMONIES' |'ADMISIONTEAM';
 
 interface RegistrationManager {
   content: ContentOptions | null;

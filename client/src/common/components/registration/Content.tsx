@@ -6,24 +6,24 @@ import Instructions from "./components/Instructions"
 import Testimonies from "./components/Testimonies"
 import AdmisionTeam from "./components/AdmisionTeam"
 
-const {content} = useRegistrationManager();
-
-const renderComponent = () => {
-  switch(content) {
-    case 'REQUIREMENTS' : return <Requirements />;
-    case 'APLICATIONS': return <Applications />;
-    case 'TUITIONS' : return <Tuition />;
-    case 'INSTRUCTIONS': return <Instructions />;
-    case 'TESTIMONIES': return <Testimonies />;
-    case 'ADMISIONTEAM': return <AdmisionTeam />;
-    default: return null;
-  }
-}
-
 //{renderComponent}
 function Content () {
+  const {content} = useRegistrationManager();
+  
+  const renderComponent = () => {
+    switch(content) {
+      case 'REQUIREMENTS' : return <Requirements />;
+      case 'APPLICATIONS': return <Applications />;
+      case 'TUITIONS' : return <Tuition />;
+      case 'INSTRUCTIONS': return <Instructions />;
+      case 'TESTIMONIES': return <Testimonies />;
+      case 'ADMISIONTEAM': return <AdmisionTeam />;
+      default: return null;
+    }
+  }
   return (
     <section>
+      {renderComponent()}
     </section>
   )
 }
