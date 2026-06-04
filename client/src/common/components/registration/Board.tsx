@@ -21,7 +21,7 @@ function Board () {
           {
             contentOptions.map ((option)=>(
 
-              <button onClick={()=> changeContentState}>{option.label}</button>
+              <button onClick={()=> changeContentState(option.id)}>{option.label}</button>
             ))
           }
         </div>
