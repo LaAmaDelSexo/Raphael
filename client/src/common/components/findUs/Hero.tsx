@@ -14,8 +14,8 @@ function Hero () {
       <APIProvider apiKey={Key}>
         <div id="map" style={{ width: '100%', height: '400px' }} >
           <Map
-            defaultCenter={{lat: 22.54992, lng: 0}}
-            defaultZoom={3}
+            defaultCenter={{lat: 10.696306853340666, lng: -71.6064648658556}}
+            defaultZoom={20}
             gestureHandling={'greedy'}
             disableDefaultUI={true}
           />

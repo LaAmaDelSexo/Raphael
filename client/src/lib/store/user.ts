@@ -17,7 +17,7 @@ interface User {
     theme: 'light' | 'dark' | 'system';
     locale: 'es' | 'en';
   };
-};
+}
 
 interface UserState {
   profile: User | null;
@@ -30,8 +30,6 @@ interface UserState {
   logout: () => void;
   checkAuth: () => Promise<void>
 }
-
-
 
 export const useUser = create<UserState>((set) => ({
   profile: null,
