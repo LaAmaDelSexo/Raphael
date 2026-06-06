@@ -5,7 +5,7 @@ function Hero () {
     <>
       <section>
         <div className="main">
-          <img src="" alt="Sexo" />          
+          <img src="" alt="no data available" />          
         </div>
         <div className="hero">
           </div>

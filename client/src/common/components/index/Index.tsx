@@ -4,6 +4,7 @@ import Hero from '../index/Hero'
 import Highlights from '../index/Highlights'
 import Footer from './Footer'
 
+
 function Index () {
   return (
     <>
