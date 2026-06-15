@@ -1,12 +1,13 @@
 //import '../../asset/'
+import './hero.css'
 
 function Hero () {
   return (
     <>
       <section>
         <div className="main">
-          <img src="" alt="no data available" />          
         </div>
+        <hr className='separator' />
         <div className="hero">
           </div>
           <div>

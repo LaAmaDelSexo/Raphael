@@ -1,0 +1,91 @@
+.topbar {
+  display: block;
+  height: auto;
+  margin: 0px;
+  z-index: 10;
+}
+
+.topbar-box {
+  background: linear-gradient(90deg, rgba(3, 47, 112, 0.904) 0%, rgba(21, 69, 124, 0.781) 48%, rgba(48, 110, 180, 0.94) 100%);
+  border: 0px solid #131f3fa1;
+  border-radius: 2px 2px 15px 15px;
+
+  height: 50px;
+  padding: 5px;
+  margin: 0px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+  flex-direction: row;
+  flex-flow: row nowrap;
+}
+
+.topbar-item {
+  color: white;
+}
+
+.topbar-item {
+  flex: 0 0 auto;
+  color: white;
+}
+
+.topbar-options {
+  display: flex;
+  justify-content: end;
+  flex: 1 0 auto;
+  color: white;
+}
+
+.link {
+
+  margin: 0px 0.5vw;
+  padding: 6px;
+  color: white;
+  
+  
+  font-family: 'Urbanist';
+  font-weight: 500;
+  text-decoration: none;
+
+  border: solid 2px #0b0b3300;
+  border-radius: 18px;
+  transition: 
+    color 744ms ease, 
+    border 200ms ease,
+    background-color 700ms;
+}
+
+.link:hover {
+  text-decoration: none;
+  margin: 0px 0.5vw;
+/*  color: rgb(65, 13, 47); */
+  color: rgb(7, 19, 46);
+  border: solid 2px white;
+  background-color: white;
+  transition: 
+    color 372ms ease, 
+    border 2500ms ease,
+    background-color 751ms ease;
+
+}
+
+.home-ico{
+  align-items: center;
+  height: 30px;
+  width: auto;
+  display: flex;
+
+}
+.home-ico>img {
+  height: 30px;
+}
+
+.highbar {
+  margin: 0px 30px;
+  background:linear-gradient(45deg, rgba(23, 155, 207, 0.397) 0.000%, rgba(114, 197, 235, 0.479) 100.000%);
+  font-family: 'Urbanist';
+
+  border-radius: 0px 0px 15px 15px;
+  color: rgba(255, 255, 255, 0.822);
+}
