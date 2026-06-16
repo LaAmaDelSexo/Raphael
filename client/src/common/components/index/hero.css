@@ -1,32 +1,191 @@
 section {
 
   
-  background-color: rgb(36, 59, 109);
+  background-color: rgb(255, 255, 255);
 
 }
 
 .main {
   width: 100vw;
-  height: 110vh;
-  margin-top: -94px;
+  height: 102vh;
+  margin-top: -114px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 
   background-image: url('/assets/images/whiteboard.jpg');
   background-position: center;
 
   box-shadow: 
-    inset 0 0 70px 20px rgba(0, 55, 255, 0.226)
+    inset  -0px -475px 950px -50px  #0a4db17c;
 
 }
+
+@keyframes titleLoader {
+  from{
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.main h1 {
+  color: rgba(255, 255, 255, 0.904);
+  font-family: 'Times New Roman';
+  text-decoration: underline double 2px #ffffff65;
+  text-underline-offset:18px;
+  text-shadow: #516dca2c 2px 3px 2px ;
+  font-size: 92px;
+  font-weight: 400;
+  flex: 1 1 100vw;
+  animation: titleLoader 1750ms 1 normal;
+  transition: all 500ms;
+}
+
 .main img {
-  width: 100%;
-  height: 100%;
+  animation: titleLoader 1950ms 1 normal;
+  flex: 0 0 auto;
+  width: 120px;
+  height: 110px;
+  padding: 20px;
 }
 
 .separator {
-  margin: 10px 0px;
+  margin: 50px 0px 75px 0px;
   height: 10px;
   border-style: solid;
-  border-color: rgba(255, 255, 255, 0.884);
+  border-color: rgb(23, 53, 116);
   border-width: 5px 0 5px 0;
   border-radius: -50%;
+}
+
+.information{
+  padding: 0px 14vw;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  
+  border: 1px solid black;
+  
+}
+
+.information>h1 {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  height: 300px;
+  border: 1px solid black;
+  color: rgb(12, 22, 97);
+  flex: 0 1 28vw;
+  text-decoration: underline double;
+}
+
+.information>p {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  height: 300px;
+  border: 1px solid black;
+  color: rgb(12, 22, 97);
+  flex: 0 1 38vw;
+}
+
+
+.containers {
+  height: 650px;
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+  gap: 75px;
+
+  font-family: 'Urbanist';
+  
+  background-image: url('../../../../public/assets/images/kids.png') ;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  box-shadow: 
+  inset  -0px -555px 920px -65px  #073b77ef;
+  
+  
+}
+.container{
+  display: flex;
+  flex-direction: column;
+
+
+  height: 350px;
+  width: 350px;
+
+  color: white;
+
+  background-color: rgb(27, 119, 199);
+  border-radius: 5px 5px 0px 0px;
+  
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  box-shadow: 
+  inset  -0px -125px 90px -65px  #082749de;
+  
+ 
+
+  border: 0px rgb(255, 255, 255);
+  border-style: solid ;
+  border-bottom: 15px solid #198be7e8;
+
+  transition: 550ms ease;
+}
+.container:nth-child(1) {
+  background-image: url('../../../../public/assets/images/pre-k.png');
+}
+.container:nth-child(2) {
+  background-image: url('../../../../public/assets/images/elementary.png');
+}
+.container:nth-child(3) {
+  background-image: url('../../../../public/assets/images/secundary.png');
+}
+.container:hover {
+  transform: scale(1.1);
+  background-color: rgba(12, 69, 122, 0.74);
+  background-blend-mode: multiply;
+  color: rgba(255, 255, 255, 0.829);
+  transition: all 500ms ease;
+}
+
+.grades-information{
+  padding: 25px;
+  
+  flex: 1 0 auto;
+  justify-self: center;
+  align-content: center;
+  color: rgba(255, 255, 255, 0);
+}
+
+.container:hover .grades-information {
+  flex: 1 0 auto;
+  color: rgb(255, 255, 255);
+  transition: 200ms ease-in-out;
+}
+
+
+.highlight-data{
+  flex: 0 0 auto;
+  justify-items: end;
+  align-self: center;
+  font-size: 22px;
+  color: white;
+}
+.container:hover .highlight-data{
+  opacity: 0.01;
 }

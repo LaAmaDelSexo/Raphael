@@ -1,23 +1,21 @@
 
 //import './home'
+import { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
 import './nav.css'
-import {FeedRandomizer} from './nav'
+import {FeedRandomizer} from './feedLogic'
 
 function Nav () {
-  let feed: string = ""
+  const [feed, setFeed] = useState<string>("")
+  const [animateKey, setAnimateKey] = useState<number>(0)
 
-  function feedReplacer () {
-    let data: string = ""
-    setInterval(()=>{
-    //alert("sexo")
-      data = FeedRandomizer().content
-    }, 10000)
-
-    return feed = data
-  }
-  
-
+  useEffect(()=>{
+    setFeed(FeedRandomizer().content)
+    const interval = setInterval(()=>{
+        setFeed(FeedRandomizer().content)
+      }, 10000)
+      return () => clearInterval(interval)
+  })
   return (
     <>
       <nav className="topbar">
@@ -57,7 +55,7 @@ function Nav () {
         </ul>
         <ul className="highbar">
           <li>
-            <p>{feed}</p>
+            <p key={feed} className="feed-text-animate">{feed}</p>
           </li>
         </ul>
       </nav>
